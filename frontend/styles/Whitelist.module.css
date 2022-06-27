@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.numberOfWhitelisted {
+    padding: 3px;
+}
+
+.benefits {
+    margin-top: 20px;
+}

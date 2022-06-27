@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Contract, utils } from "ethers";
 import { NFT_CONTRACT_ADDRESS, NFT_CONTRACT_ABI } from "../lib/nftConstants";
 import {WalletConnectContext} from '../Context/walletConnectContext';
+import styles from "../styles/Home.module.css";
 
 export default function NFT() {
   const [loading, setLoading] = useState(false);
@@ -227,7 +228,7 @@ export default function NFT() {
   };
 
   return (
-      <div className=''>
+      <div className={styles.main}>
         <div>
           <h1 className=''>Welcome!</h1>
           <div className=''>

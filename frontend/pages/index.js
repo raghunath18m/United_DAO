@@ -2,6 +2,9 @@ import React from 'react';
 import Head from 'next/head'
 import Card from '../components/Card'
 import cardData from '../lib/data'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+
  
 export default function Home() {
   const cards = cardData.map(data =>{
@@ -11,17 +14,19 @@ export default function Home() {
     )
 
   return (
-    <div className=''>
+    <div>
       <Head>
         <title>Manchester United</title>
         <meta name="description" content="ManUtd" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className=''>
-        <h1>Be a part of one of the worlds first Blockchain based Football community</h1>
-        <img src="" alt="" />
-        <div className=''>
+      <div className={styles.main}>
+        <div className="left">
+          <Image src="/../public/homeicon.png" alt="homeicon" width={520} height={420} />
+          <h2>Be a part of one of the worlds first Decentralized Football community</h2>
+        </div>
+        <div className='right'>
           {cards}
         </div>
       </div>

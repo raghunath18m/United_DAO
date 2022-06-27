@@ -2,15 +2,98 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Courier New", Courier, monospace;
+  background: #01000a;
+  color: rgb(179, 172, 172);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
 * {
   box-sizing: border-box;
 }
+
+a {
+  color: rgb(179, 172, 172);
+  text-decoration: none;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* navigation */
+
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid rgb(131, 129, 129);
+}
+
+nav h1 {
+  margin-top: 30px;
+  font-size: 1.7rem;
+}
+
+.navigation {
+  margin-bottom: 28px;
+}
+
+nav a {
+  margin-left: 60px;
+  font-size: larger;
+}
+
+nav .logo {
+  margin-right: auto;
+  display: flex;
+}
+
+
+/* footer */
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid rgb(131, 129, 129);
+}
+
+footer li {
+  list-style-type: none;
+}
+
+
+/* cards */
+
+.cardWrapper {
+  border-top: 0.5px solid rgb(131, 129, 129);
+  border-bottom: 0.5px solid rgb(131, 129, 129);
+}
+
+.cardWrapper a {
+  font-size: 2rem;
+}
+
+
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #777;
+  border: none;
+  color: #01000a;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 150px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {background-color: #3d423d}
