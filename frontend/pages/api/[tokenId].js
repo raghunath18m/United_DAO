@@ -4,6 +4,6 @@ export default function handler(req, res) {
     res.status(200).json({
       name: "United Legend #" + tokenId,
       description: "MUN is collection of NFTs representing the famous players played at Manchester United FC",
-      image: image_url + tokenId + ".png",
+      image: image_url + tokenId + ".svg",
     });
   }

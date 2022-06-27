@@ -1,13 +1,14 @@
 import React from 'react';
 import Link from "next/link";
-import Image from 'next/image'
+import Image from 'next/image';
+import logo from "../public/logo.jpeg";
 
 
 const Navbar = () => {
     return ( 
         <nav>
             <div className="logo">
-                <Image src="/../public/logo.jpeg" alt="site logo" width={128} height={77} />
+                <Image src={logo} alt="site logo" width={128} height={77} />
                 <h1>Manchester United DAO</h1>
             </div>
             <div className="navigation">
