@@ -236,7 +236,7 @@ export default function NFT() {
             <h3>Join the whitelist to get 50% off for the NFTs !</h3>
           </div>
           <div className=''>
-            {tokenIdsMinted}/20 have been minted
+            {tokenIdsMinted}/10 have been minted
           </div>
           {renderButton()}
         </div>
