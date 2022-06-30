@@ -85,7 +85,7 @@ contract DAO is Ownable {
     }
 
     // Create a payable constructor which initializes the contract
-    // instances for FakeNFTMarketplace and CryptoDevsNFT
+    // instances for FakeNFTMarketplace and NFT
     // The payable allows this constructor to accept an ETH deposit when it is being deployed
     constructor(address _nftMarketplace, address _NFT) payable {
         nftMarketplace = IFakeNFTMarketplace(_nftMarketplace);
